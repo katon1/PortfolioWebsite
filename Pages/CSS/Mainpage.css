@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: sans-serif;
     background-color: #8bbcd4;
     margin: 0;
@@ -26,15 +26,6 @@ h1 {
     border-bottom: 1px solid #8bbcd4;
     margin-bottom: 20px;
 }
-
-.navbar a {
-    padding: 0 10px;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-}
-
-
 
 .contact {
     text-align: center;
@@ -74,4 +65,8 @@ h1 {
     padding: 20px 0;
     background-color: #000;
     color: #fff;
+} */
+
+li{
+    text-transform: uppercase;
 }

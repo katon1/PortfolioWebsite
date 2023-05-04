@@ -1,4 +1,56 @@
-/* Reference https://codepen.io/dudleystorey/pen/yLoNpd */
+body {
+  font-family: sans-serif; /*Will change this font later to sentient*/
+  background-image: linear-gradient(#243B55, #141E30);
+  /* margin: 0;
+  padding: 0; */
+}
+
+#navbar {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 150px; /* adjust as needed */
+}
+
+#navbar > a > img {
+  width: 128px;
+  height: 128px;
+  /* Make this image more blended in? */
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #141E30;
+  border-radius: 24px;
+  font-size: 14px;
+  margin: 20px;
+  padding: 1px 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: skyblue;
+  color: #141E30;
+}
+
+.description{
+  color: #D2D1D1;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* HERO Reference https://codepen.io/dudleystorey/pen/yLoNpd */
+
 @font-face {
   font-family: Orphan;
   src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/orphan_2.woff') format('woff');
@@ -21,19 +73,15 @@ font-size: 4.8vw;
 /* so that the text scales to browser window */
 min-height: 100%;
 }
-body { 
-margin: 0; height: 100%;
-display: flex;
-align-content: center;
-justify-content: center; 
-/* basic centering of content with flexbox */
-}
+
 h1 { 
-width: 95%;
+width: 101.5%;
 overflow: hidden;
 text-transform: uppercase;
+color: #D2D1D1;
 /* just in case someone forgets to turn on CAPS */
 }
+
 h1 span { 
 display: inline-block;
 width: 50%;
@@ -41,20 +89,18 @@ overflow: hidden;
 line-height: 2;
 animation: scroller 4s 1.5s 1 forwards, 5s; 
 } 
+
 h1 span:first-child { 
 text-indent: 100%; 
 /* disappers text in the first (overflow: hidden) span by pushing it all the way to the right. Curiously, Webkit works with a value of 50%, but Firefox needs 100%; */
-border-right: .5vw solid #000; 
+border-right: .5vw solid #fff; 
 }
 h1 span:last-child { 
 text-indent: -50%;  
  /* the opposite indent value for text in the right <span> element  */
-border-left: .5vw solid #000;
+border-left: .5vw solid #fff;
 }
 
+/* Ref ends here */
 
-/* h1 span.closer:first-child { 
-width: 200%; 
- shifted due to character length in the second part of the animation: this could also be automated by JavaScript counting the number of chars in each span and dividing the space appropriately 
-}
-h1 span.closer:last-child { width: 80%;  } */
+
